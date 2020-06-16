@@ -85,7 +85,6 @@ class Differ
         }
 
         foreach ($toTable->getColumns() as $toColumn) {
-
             // Determine new columns
             if (!$fromTable->hasColumn($toColumn->getName())) {
                 $changedTable->addNewColumn($toColumn);
@@ -164,7 +163,6 @@ class Differ
         }
 
         foreach ($toTable->getIndexes() as $toIndex) {
-
             // Determine new indexes
             if (!$fromTable->hasIndex($toIndex->getName())) {
                 $changedTable->addNewIndex($toIndex);
@@ -195,7 +193,6 @@ class Differ
         }
 
         foreach ($toTable->getForeignKeys() as $toForeignKey) {
-
             // Determine new foreign keys
             if (!$fromTable->hasForeignKey($toForeignKey->getName())) {
                 $changedTable->addNewForeignKey($toForeignKey);

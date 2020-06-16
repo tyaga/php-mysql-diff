@@ -45,7 +45,7 @@ class ParserTest extends AbstractTest
         $this->assertEquals('smallint(5) unsigned', $actorTable->getColumnByName('actor_id')->getColumnType());
         $this->assertEquals('smallint', $actorTable->getColumnByName('actor_id')->getDataType());
         $this->assertTrue($actorTable->getColumnByName('actor_id')->isUnsigned());
-        $this->assertEquals(5 , $actorTable->getColumnByName('actor_id')->getLength());
+        $this->assertEquals(5, $actorTable->getColumnByName('actor_id')->getLength());
         $this->assertNull($actorTable->getColumnByName('actor_id')->getPrecision());
         $this->assertFalse($actorTable->getColumnByName('actor_id')->isNullable());
         $this->assertTrue($actorTable->getColumnByName('actor_id')->isAutoIncrement());
@@ -89,7 +89,7 @@ class ParserTest extends AbstractTest
         $this->assertEquals('varchar(40)', $staffTable->getColumnByName('password')->getColumnType());
         $this->assertEquals('varchar', $staffTable->getColumnByName('password')->getDataType());
         $this->assertFalse($staffTable->getColumnByName('password')->isUnsigned());
-        $this->assertEquals(40 , $staffTable->getColumnByName('password')->getLength());
+        $this->assertEquals(40, $staffTable->getColumnByName('password')->getLength());
         $this->assertNull($staffTable->getColumnByName('password')->getPrecision());
         $this->assertTrue($staffTable->getColumnByName('password')->isNullable());
         $this->assertFalse($staffTable->getColumnByName('password')->isAutoIncrement());
@@ -117,7 +117,7 @@ class ParserTest extends AbstractTest
         $this->assertEquals('int(10)', $testTable->getColumnByName('test1')->getColumnType());
         $this->assertEquals('int', $testTable->getColumnByName('test1')->getDataType());
         $this->assertFalse($testTable->getColumnByName('test1')->isUnsigned());
-        $this->assertEquals(10 , $testTable->getColumnByName('test1')->getLength());
+        $this->assertEquals(10, $testTable->getColumnByName('test1')->getLength());
         $this->assertNull($testTable->getColumnByName('test1')->getPrecision());
         $this->assertTrue($testTable->getColumnByName('test1')->isNullable());
         $this->assertFalse($testTable->getColumnByName('test1')->isAutoIncrement());
